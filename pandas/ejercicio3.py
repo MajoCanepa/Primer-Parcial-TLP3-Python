@@ -25,7 +25,7 @@ productos = [
 ]
 
 df = pd.DataFrame(productos)
-# Cálculo del valor total del inventarion por producto.
+# Cálculo del valor total del inventario por producto.
 df['inventario_total_producto'] = df['precio'] * df['cantidad_disponible']
 # Valor total del inventario.
 df['inventario_total'] = df["inventario_total_producto"].cumsum()
